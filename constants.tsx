@@ -25,8 +25,9 @@ export const SERVICES: Service[] = [
       'Office Document Cabinets',
       'Retail Display Shelves'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=800',
+    imageUrl: new URL('/assets/images/cupboard.jpg', import.meta.url).href,
   },
+
   {
     id: 'beds-tables',
     title: 'Beds & Tables',
@@ -38,7 +39,7 @@ export const SERVICES: Service[] = [
       'Coffee Tables',
       'Bedside Tables'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&q=80&w=800',
+    imageUrl: new URL('/assets/images/bed-and-tables.jpg', import.meta.url).href,
   },
   {
     id: 'doors-windows',
@@ -51,7 +52,7 @@ export const SERVICES: Service[] = [
       'Security Room Doors',
       'Ventilation Fan Frames'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&q=80&w=800',
+    imageUrl: new URL('/assets/images/doors-and-windows.jpg', import.meta.url).href,
   },
   {
     id: 'kitchen',
@@ -64,7 +65,7 @@ export const SERVICES: Service[] = [
       'Built-in Appliance Units',
       'Granite-top Preparations'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=800',
+    imageUrl: new URL('/assets/images/pantry-cupboard.jpg', import.meta.url).href,
   },
   {
     id: 'repairs',
@@ -77,7 +78,7 @@ export const SERVICES: Service[] = [
       'Table Surface Refinishing',
       'Sofa Frame Strengthening'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581781870027-04212e231e96?auto=format&fit=crop&q=80&w=800',
+    imageUrl: new URL('/assets/images/old.jpg', import.meta.url).href,
   },
   {
     id: 'general-woodwork',
@@ -90,19 +91,19 @@ export const SERVICES: Service[] = [
       'Carved Wall Decor',
       'Unique Wooden Artifacts'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=800',
+    imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href,
   }
 ];
 
 export const GALLERY: GalleryItem[] = [
-  { id: '1', title: 'Teak Dining Table', category: 'Furniture', imageUrl: 'https://images.unsplash.com/photo-1617806118233-f8e187f4289b?auto=format&fit=crop&q=80&w=800' },
-  { id: '2', title: 'Modern Pantry Set', category: 'Kitchen', imageUrl: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800' },
-  { id: '3', title: 'Main Door', category: 'Doors', imageUrl: 'https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&q=80&w=800' },
+  { id: '1', title: 'Teak Dining Table', category: 'Furniture', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},
+  { id: '2', title: 'Modern Pantry Set', category: 'Kitchen', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},,
+  { id: '3', title: 'Main Door', category: 'Doors', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},,
   { id: '4', title: 'Wardrobe Restoration', category: 'Repairs', imageUrl: 'https://images.unsplash.com/photo-1558997519-53bb890929a3?auto=format&fit=crop&q=80&w=800', beforeImageUrl: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=800' },
-  { id: '5', title: 'Office Desk', category: 'Furniture', imageUrl: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&q=80&w=800' },
-  { id: '6', title: 'Bedroom Wardrobe', category: 'Cupboards', imageUrl: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&q=80&w=800' },
-  { id: '7', title: 'Traditional Sofa', category: 'Furniture', imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800' },
-  { id: '8', title: 'TV Stand', category: 'Furniture', imageUrl: 'https://images.unsplash.com/photo-1594913785162-e6786092497b?auto=format&fit=crop&q=80&w=800' },
+  { id: '5', title: 'Office Desk', category: 'Furniture', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},
+  { id: '6', title: 'Bedroom Wardrobe', category: 'Cupboards', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},
+  { id: '7', title: 'Traditional Sofa', category: 'Furniture', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},
+  { id: '8', title: 'TV Stand', category: 'Furniture', imageUrl: new URL('/assets/images/custom.jpg', import.meta.url).href},
 ];
 
 export const TESTIMONIALS: Testimonial[] = [

@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom';
 import { PHONE_NUMBER, WHATSAPP_LINK, TAGLINE, TRUST_INDICATORS, SERVICES, TESTIMONIALS, BUSINESS_NAME_SI } from '../constants';
 import { ArrowRight, Phone, MessageSquare, ChevronRight, Star, Hammer, MapPin, Award, Trees, Quote, ShieldCheck } from 'lucide-react';
 
+const heroUrl = new URL('../assets/hero-image.jpg', import.meta.url).href;
+
 const Hero = () => {
   return (
     <section className="relative h-[95vh] min-h-[700px] flex flex-col justify-center overflow-hidden bg-stone-950">
       {/* Background Image with improved overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2500&auto=format&fit=crop"
-          alt="Luxury Dark Wood Furniture"
+          src={heroUrl}
+          alt={BUSINESS_NAME_SI}
           className="w-full h-full object-cover opacity-60 scale-105 animate-pulse-slow" 
           style={{ animationDuration: '20s' }}
         />
@@ -154,8 +156,8 @@ const CraftsmanshipHighlight = () => {
            <div className="w-full lg:w-1/2 relative group">
               {/* Image Frame */}
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                 <img 
-                  src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=1200&auto=format&fit=crop" 
+                <img 
+                  src={new URL('../assets/images/hand.jpg', import.meta.url).href}
                   className="w-full aspect-[4/5] object-cover transition-transform duration-1000 group-hover:scale-105 saturate-0 group-hover:saturate-100" 
                   alt="Carpenter actively shaving wood" 
                 />
