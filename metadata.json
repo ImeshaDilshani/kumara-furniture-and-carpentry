@@ -1,0 +1,7 @@
+{
+  "name": "Kumara Furniture & Carpentry",
+  "description": "A modern, trust-focused website for a local carpentry business specializing in custom furniture, home woodwork, and skilled craftsmanship.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
